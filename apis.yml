@@ -1,17 +1,42 @@
 aid: lark-technologies
 name: Lark
-description: 'Lark is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Lark Health (Lark Technologies, Inc.) is a Mountain View, California
+  digital health company founded in 2011 by Julia Hu and Jeff Zira. Lark delivers
+  AI-powered, conversational chronic disease prevention and management programs —
+  diabetes prevention (CDC-recognized DPP and Medicare MDPP), diabetes management,
+  hypertension and heart health, GLP-1 and weight management, and a combined
+  cardiometabolic program — through a text-message-style mobile app backed by
+  connected devices and human coaching, sold to health plans, employers, PBMs and
+  brokers. Lark publishes no public developer API, SDK, or machine-readable API
+  specification: there is no developer portal, no api./developer. host, and the
+  "Lark API" appears only as an internal component on the Lark Technologies status
+  page, with partner integration handled through enterprise agreements. The company
+  does publish a canonical llms.txt for AI tools, a responsible disclosure policy
+  with a small bug bounty, a public status page, and a security page asserting SOC 2
+  Type II and HITRUST certification plus HIPAA Business Associate status.'
 url: https://raw.githubusercontent.com/api-evangelist/lark-technologies/refs/heads/main/apis.yml
+image: https://cdn.prod.website-files.com/622154d4a1d5c090426f44f1/62227d6306dc317a2ee44c0b_webclip_256x256.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-secondary-market: https://forgeglobal.com/lark-technologies_stock/
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-08-04'
 modified: '2026-08-04'
 tags:
 - Company
+- Health
+- Healthcare
+- Digital Health
+- Chronic Disease Management
+- Diabetes
+- Hypertension
+- Weight Management
+- Artificial Intelligence
+- Health Coaching
+- Remote Patient Monitoring
+- Telehealth
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +45,43 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/lark-technologies_stock/
+  url: https://www.lark.com/
+- type: About
+  url: https://www.lark.com/lark-about
+- type: Blog
+  url: https://www.lark.com/blog
+- type: Press
+  url: https://www.lark.com/press
+- type: Careers
+  url: https://www.lark.com/careers/home
+- type: Support
+  url: https://support.lark.com/hc/en-us
+- type: SignUp
+  url: https://www.lark.com/signup/get-lark
+- type: TermsOfService
+  url: https://www.lark.com/terms-conditions
+- type: PrivacyPolicy
+  url: https://www.lark.com/privacy-policy
+- type: StatusPage
+  url: https://larktechnologies.statuspage.io/
+- type: Security
+  url: https://www.lark.com/responsible-disclosure-policy
+- type: Compliance
+  url: https://www.lark.com/security
+- type: TrustCenter
+  url: security/lark-technologies-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/lark-technologies-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/lark-technologies-domain-security.yml
+- type: Lifecycle
+  url: lifecycle/lark-technologies-lifecycle.yml
+- type: Conformance
+  url: conformance/lark-technologies-conformance.yml
+- type: LLMsTxt
+  url: llms/lark-technologies-llms.txt
+x-enrichment:
+  date: '2026-08-04'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1

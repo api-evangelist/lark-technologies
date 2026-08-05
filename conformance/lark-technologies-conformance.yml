@@ -1,0 +1,91 @@
+generated: '2026-08-04'
+method: searched
+source: https://www.lark.com/security
+note: >-
+  Lark Health publishes no machine-readable API contract, so every API-technical
+  standard below is recorded as "no evidence" rather than non-conformant. The
+  standards Lark does evidence are healthcare regulatory and audit regimes, not API
+  specifications.
+standards:
+- id: hipaa
+  conforms: true
+  evidence: >-
+    HIPAA Business Associate status and BAA stated on https://www.lark.com/security;
+    HIPAA Notice of Privacy Practices published at
+    https://www.lark.com/hipaa-notice-of-privacy-practices
+- id: soc2-type-ii
+  conforms: true
+  evidence: 'https://www.lark.com/security: "obtained our SOC 2 Type II and HITRUST certifications"'
+- id: hitrust
+  conforms: true
+  evidence: 'https://www.lark.com/security: "obtained our SOC 2 Type II and HITRUST certifications"'
+- id: ccpa-cpra
+  conforms: true
+  evidence: >-
+    California privacy notice section in https://www.lark.com/privacy-policy plus a
+    "Your Privacy Choices" opt-out page at https://www.lark.com/your-privacy-choices
+- id: cdc-dprp
+  conforms: true
+  evidence: >-
+    Lark markets a CDC-recognized Diabetes Prevention Program and a Medicare
+    Diabetes Prevention Program (MDPP) at
+    https://www.lark.com/enterprise/programs/diabetes-prevention-program and
+    https://www.lark.com/enterprise/programs/mdpp-medicare
+- id: tcpa-sms
+  conforms: true
+  evidence: >-
+    Dedicated SMS terms published at https://www.lark.com/lark-sms-terms (the app is
+    a text-message-style interface).
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returns 404 on every lark.com host.
+- id: iso-27001
+  conforms: false
+  evidence: Not claimed on the security page.
+- id: pci-dss
+  conforms: false
+  evidence: Not claimed; Lark is not a payments provider.
+- id: fedramp
+  conforms: false
+  evidence: Not claimed.
+- id: oauth2
+  conforms: null
+  evidence: No public API, no securitySchemes, no OAuth documentation.
+- id: openid-connect
+  conforms: null
+  evidence: /.well-known/openid-configuration returns 404; no IdP surface published.
+- id: fhir-r4
+  conforms: null
+  evidence: >-
+    No public FHIR endpoint or claim. Lark is a chronic-care program vendor rather
+    than a records system; payer/provider data exchange is contracted privately.
+- id: rfc9457-problem-details
+  conforms: null
+  evidence: No public API contract to inspect.
+- id: openapi
+  conforms: false
+  evidence: >-
+    No OpenAPI/Swagger document found. Probed /openapi.json, /openapi.yaml,
+    /swagger.json, /v1/openapi.json, /api-docs, /docs, /redoc on www.lark.com and
+    enroll.lark.com (all 404) and DNS-probed api./developer./developers./docs./
+    portal./mcp. subdomains (all NXDOMAIN except portal.lark.com, which returns 403).
+- id: asyncapi
+  conforms: false
+  evidence: No event, streaming, or webhook surface published.
+- id: mcp
+  conforms: false
+  evidence: No MCP server; mcp.lark.com is NXDOMAIN.
+- id: a2a
+  conforms: false
+  evidence: >-
+    /.well-known/agent-card.json and /.well-known/agent.json return 404 on
+    www.lark.com and support.lark.com; the careers.lark.com 200 is an HTML catch-all
+    and was rejected.
+- id: llmstxt
+  conforms: true
+  evidence: >-
+    https://www.lark.com/llms.txt returns 200 text/plain (saved verbatim to
+    llms/lark-technologies-llms.txt). Thin — 9 URLs, no descriptions, and one listed
+    URL (/faq) 404s.
+x-evidence:
+  fetched: '2026-08-04'

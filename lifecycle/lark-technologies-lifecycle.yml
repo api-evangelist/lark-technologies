@@ -1,0 +1,71 @@
+generated: '2026-08-04'
+method: searched
+source: https://larktechnologies.statuspage.io/
+status_page: https://larktechnologies.statuspage.io/
+status_page_detail:
+  provider: Atlassian Statuspage
+  page_id: v827x782hry1
+  page_name: Lark Technologies
+  api: https://larktechnologies.statuspage.io/api/v2/summary.json
+  vanity_host: status.lark.com
+  vanity_host_working: false
+  vanity_host_note: >-
+    status.lark.com CNAMEs to larktechnologies.statuspage.io but the TLS handshake
+    fails, so the branded status host is effectively unreachable.
+  components:
+  - name: API
+    description: Lark API
+    status: operational
+  - name: Lark Support
+    description: Lark Support Help Desk
+    status: operational
+  - name: Lark Website
+    description: Lark public website
+    status: operational
+  - name: Mobile App
+    description: The Lark mobile app.
+    status: operational
+  observed: '2026-08-04'
+  last_page_update: '2024-02-29T20:43:48.583Z'
+versioning:
+  scheme: null
+  current: null
+  docs: null
+  note: >-
+    No public API and no published versioning policy. The status page lists an
+    internal component named "API" (Lark API) but no version, host, or contract is
+    published anywhere on lark.com.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: >-
+    No deprecation or sunset policy published. Not scored — there is no public API
+    surface to deprecate.
+sla:
+  url: null
+  uptime_target: null
+  note: >-
+    No public SLA. Availability commitments are handled in enterprise customer
+    agreements, which are not public.
+changelog:
+  url: null
+  note: >-
+    No dated product or API changelog. The nearest public equivalents are the press
+    page (https://www.lark.com/press) and the blog (https://www.lark.com/blog),
+    neither of which is a release log.
+deprecated_operations: []
+gaps:
+- No public API contract (OpenAPI/AsyncAPI/GraphQL) — nothing to version or deprecate.
+- No changelog or release notes.
+- No public SLA or uptime target.
+- Branded status host status.lark.com does not serve TLS.
+x-evidence:
+  fetched: '2026-08-04'
+  urls:
+  - url: https://larktechnologies.statuspage.io/
+    http_status: 200
+  - url: https://larktechnologies.statuspage.io/api/v2/components.json
+    http_status: 200
+  - url: https://status.lark.com/
+    http_status: 0
+    note: TLS handshake failure

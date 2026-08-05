@@ -1,0 +1,68 @@
+generated: '2026-08-04'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.lark.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  8 16:19:14 2026 GMT
+  hsts: false
+- host: support.lark.com
+  https: true
+  cert_expires: Sep 18 23:40:45 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+  hsts_include_subdomains: true
+  note: Zendesk-hosted help center
+- host: enroll.lark.com
+  https: true
+  cert_expires: Dec  9 23:59:59 2026 GMT
+  hsts: false
+  note: member enrollment application (enroll.production.lark.com)
+- host: larktechnologies.statuspage.io
+  https: true
+  cert_expires: Feb  3 23:59:59 2027 GMT
+  hsts: true
+  hsts_max_age: 259200
+  note: Atlassian Statuspage; status.lark.com CNAMEs here but does not serve TLS
+absent_hosts:
+- api.lark.com
+- developer.lark.com
+- developers.lark.com
+- docs.lark.com
+- mcp.lark.com
+- trust.lark.com
+- dashboard.lark.com
+- partners.lark.com
+findings:
+- id: no-hsts-on-www
+  severity: low
+  detail: www.lark.com serves no Strict-Transport-Security header.
+- id: dmarc-not-reject
+  severity: low
+  detail: DMARC policy is p=quarantine rather than p=reject.
+- id: no-dnssec
+  severity: low
+  detail: lark.com is not DNSSEC-signed.
+- id: status-subdomain-tls-broken
+  severity: low
+  detail: >-
+    status.lark.com CNAMEs to larktechnologies.statuspage.io but the TLS handshake
+    fails (curl exit 000); the status page is only reachable at the statuspage.io
+    hostname.
+- id: caa-iodef-present
+  severity: info
+  detail: 'CAA iodef points at mailto:security@lark.com — matches the published disclosure contact.'
+domains:
+- domain: lark.com
+  dnssec: false
+  caa:
+  - 0 issue "letsencrypt.org"
+  - 0 issue "pki.goog"
+  - 0 issue "pki.goog; cansignhttpexchanges=yes"
+  - 0 issuewild "amazon.com"
+  - 0 issuewild "letsencrypt.org"
+  - 0 iodef "mailto:security@lark.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine

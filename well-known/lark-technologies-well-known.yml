@@ -1,0 +1,64 @@
+generated: '2026-08-04'
+method: probed
+source: https://www.lark.com/
+notes: >-
+  Lark Health publishes no /.well-known/ discovery surface on any reachable host.
+  Every canonical path returns 404 from the Webflow-hosted marketing site. There is
+  no api./developer./docs. host to probe (all NXDOMAIN — see security/
+  lark-technologies-domain-security.yml). Recorded as a negative result so later
+  rounds do not re-probe blind; NO WellKnown pointer is wired in apis.yml because
+  nothing was found.
+found: 0
+hosts:
+- host: https://www.lark.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://support.lark.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+- host: https://enroll.lark.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://careers.lark.com
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 200
+    accepted: false
+    rejected_reason: >-
+      301 to https://www.lark.com/careers/home; body is text/html (marketing page),
+      not an AgentCard JSON object. Classic catch-all false positive — rejected.
+adjacent_surfaces:
+- kind: llms.txt
+  url: https://www.lark.com/llms.txt
+  status: 200
+  content_type: text/plain
+  file: ../llms/lark-technologies-llms.txt
+  note: >-
+    Real, provider-published, but thin (9 URLs, no descriptions) and stale — the
+    listed https://www.lark.com/faq returns 404 and /resources/ redirects.
+- kind: robots.txt
+  url: https://www.lark.com/robots.txt
+  status: 200
+  note: >-
+    Explicitly allows GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot and CCBot;
+    no agent-specific restrictions or paywall.
+x-evidence:
+  fetched: '2026-08-04'
+  method: HTTP GET with redirect following

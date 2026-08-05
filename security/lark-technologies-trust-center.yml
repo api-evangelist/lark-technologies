@@ -1,0 +1,70 @@
+generated: '2026-08-04'
+method: searched
+probe: true
+source: https://www.lark.com/security
+url: https://www.lark.com/security
+name: Security at Lark
+type: security-page
+note: >-
+  Lark publishes a security/compliance page rather than a hosted trust center
+  (trust.lark.com is NXDOMAIN). The page names its certifications and links the
+  responsible disclosure policy and a security whitepaper.
+certifications:
+- SOC 2 Type II
+- HITRUST
+- HIPAA
+certification_detail:
+- name: SOC 2 Type II
+  status: obtained
+  evidence: '"obtained our SOC 2 Type II and HITRUST certifications"'
+- name: HITRUST
+  status: obtained
+  evidence: '"obtained our SOC 2 Type II and HITRUST certifications"'
+- name: HIPAA
+  status: business-associate
+  evidence: >-
+    Lark acts as a HIPAA Business Associate and executes a Business Associate
+    Agreement (BAA) with customers; a HIPAA Notice of Privacy Practices is
+    published at https://www.lark.com/hipaa-notice-of-privacy-practices
+not_claimed:
+- ISO 27001
+- PCI DSS
+- FedRAMP
+- HITRUST CSF certification level (not specified on the page)
+documents:
+- name: Security Whitepaper
+  url: https://docs.google.com/document/d/15K29qDirDU2K8ePhwE-TR996vLBT0BqQK1UbuGGH_tU/edit
+  access: gated
+  http_status: 401
+  note: >-
+    Linked from the public security page but returns 401 to anonymous fetch, so its
+    technical contents (encryption, key management, pen-test cadence, subprocessors)
+    could not be verified.
+- name: Responsible Disclosure Policy
+  url: https://www.lark.com/responsible-disclosure-policy
+  access: public
+  http_status: 200
+- name: HIPAA Notice of Privacy Practices
+  url: https://www.lark.com/hipaa-notice-of-privacy-practices
+  access: public
+  http_status: 200
+- name: Privacy Policy
+  url: https://www.lark.com/privacy-policy
+  access: public
+  http_status: 200
+- name: Your Privacy Choices (CCPA/CPRA)
+  url: https://www.lark.com/your-privacy-choices
+  access: public
+  http_status: 200
+data_ownership: >-
+  Customer retains ownership of its data, governed by the customer agreement and
+  the Business Associate Agreement.
+evidence:
+- source: https://www.lark.com/security
+  keywords:
+  - soc 2 type ii
+  - hitrust
+  - hipaa
+  - business associate agreement
+x-evidence:
+  fetched: '2026-08-04'

@@ -42,5 +42,23 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lark is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/lark-technologies_stock/
+Lark Health (Lark Technologies, Inc.) is a Mountain View, California digital health company
+founded in 2011 by Julia Hu and Jeff Zira. Lark delivers AI-powered, conversational chronic
+disease prevention and management programs — diabetes prevention (CDC-recognized DPP and
+Medicare MDPP), diabetes management, hypertension and heart health, GLP-1 and weight
+management, and a combined cardiometabolic program — through a text-message-style mobile app
+backed by connected devices and human coaching, sold to health plans, employers, PBMs and
+brokers.
+
+**Lark publishes no public developer API.** There is no developer portal, no `api.` /
+`developer.` / `docs.` host, and no OpenAPI, AsyncAPI, GraphQL, MCP or A2A surface. The
+"Lark API" appears only as an internal component on the Lark Technologies status page;
+partner integration is handled through enterprise agreements. What Lark does publish
+publicly, and what this profile captures, is its security, compliance and lifecycle surface.
+
+- Website — https://www.lark.com/
+- Security & compliance (SOC 2 Type II, HITRUST, HIPAA BAA) — https://www.lark.com/security
+- Responsible disclosure policy — https://www.lark.com/responsible-disclosure-policy
+- Status page — https://larktechnologies.statuspage.io/
+- llms.txt — https://www.lark.com/llms.txt
+- Secondary-market listing — https://forgeglobal.com/lark-technologies_stock/
