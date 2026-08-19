@@ -21,7 +21,7 @@ x-source: harvest:secondary-market
 x-secondary-market: https://forgeglobal.com/lark-technologies_stock/
 x-tier: profiled
 x-tier-reason: enrichment-pass
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-04'
 modified: '2026-08-04'
 tags:
