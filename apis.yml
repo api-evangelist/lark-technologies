@@ -15,6 +15,17 @@ description: 'Lark Health (Lark Technologies, Inc.) is a Mountain View, Californ
   with a small bug bounty, a public status page, and a security page asserting SOC 2
   Type II and HITRUST certification plus HIPAA Business Associate status.'
 url: https://raw.githubusercontent.com/api-evangelist/lark-technologies/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/622154d4a1d5c090426f44f1/62227d6306dc317a2ee44c0b_webclip_256x256.png
 x-type: company
 x-source: harvest:secondary-market
