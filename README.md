@@ -64,23 +64,89 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lark Health (Lark Technologies, Inc.) is a Mountain View, California digital health company
-founded in 2011 by Julia Hu and Jeff Zira. Lark delivers AI-powered, conversational chronic
-disease prevention and management programs — diabetes prevention (CDC-recognized DPP and
-Medicare MDPP), diabetes management, hypertension and heart health, GLP-1 and weight
-management, and a combined cardiometabolic program — through a text-message-style mobile app
-backed by connected devices and human coaching, sold to health plans, employers, PBMs and
-brokers.
+Lark Health (Lark Technologies, Inc.) is a Mountain View, California digital health company founded in 2011 by Julia Hu and Jeff Zira. Lark delivers AI-powered, conversational chronic disease prevention and management programs — diabetes prevention (CDC-recognized DPP and Medicare MDPP), diabetes management, hypertension and heart health, GLP-1 and weight management, and a combined cardiometabolic program — through a text-message-style mobile app backed by connected devices and human coaching, sold to health plans, employers, PBMs and brokers. Lark publishes no public developer API, SDK, or machine-readable API specification: there is no developer portal, no api./developer. host, and the "Lark API" appears only as an internal component on the Lark Technologies status page, with partner integration handled through enterprise agreements. The company does publish a canonical llms.txt for AI tools, a responsible disclosure policy with a small bug bounty, a public status page, and a security page asserting SOC 2 Type II and HITRUST certification plus HIPAA Business Associate status.
 
-**Lark publishes no public developer API.** There is no developer portal, no `api.` /
-`developer.` / `docs.` host, and no OpenAPI, AsyncAPI, GraphQL, MCP or A2A surface. The
-"Lark API" appears only as an internal component on the Lark Technologies status page;
-partner integration is handled through enterprise agreements. What Lark does publish
-publicly, and what this profile captures, is its security, compliance and lifecycle surface.
+**Areas:** Company · Health · Healthcare · Digital Health · Chronic Disease Management · Diabetes · Hypertension · Weight Management · Artificial Intelligence · Health Coaching · Remote Patient Monitoring · Telehealth
 
-- Website — https://www.lark.com/
-- Security & compliance (SOC 2 Type II, HITRUST, HIPAA BAA) — https://www.lark.com/security
-- Responsible disclosure policy — https://www.lark.com/responsible-disclosure-policy
-- Status page — https://larktechnologies.statuspage.io/
-- llms.txt — https://www.lark.com/llms.txt
-- Secondary-market listing — https://forgeglobal.com/lark-technologies_stock/
+## Lark on APIs.io
+
+Everything profiled for Lark is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lark-technologies/](https://apis.io/providers/lark-technologies/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lark Technologies Domain Security](https://apis.io/security/lark-technologies/lark-technologies-domain-security/)
+- [Lark Technologies Trust Center](https://apis.io/security/lark-technologies/lark-technologies-trust-center/)
+- [Lark Technologies Vulnerability Disclosure](https://apis.io/security/lark-technologies/lark-technologies-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.lark.com/)
+- [Sign up](https://www.lark.com/signup/get-lark)
+- [Support](https://support.lark.com/hc/en-us)
+- [Blog](https://www.lark.com/blog)
+- [Security](https://www.lark.com/responsible-disclosure-policy)
+- [Compliance](https://www.lark.com/security)
+- [Terms of service](https://www.lark.com/terms-conditions)
+- [Privacy policy](https://www.lark.com/privacy-policy)
+- [Status](https://larktechnologies.statuspage.io/)
+
+## API Evangelist rating
+
+**Kin Score 24.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 50.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 22.1** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lark-technologies/](https://apis.io/providers/lark-technologies/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Lark: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lark-technologies/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
